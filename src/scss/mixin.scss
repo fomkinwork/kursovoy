@@ -1,0 +1,228 @@
+@import "varebiles.scss";
+
+@mixin wrapper{
+	max-width: 1200px;
+	padding:0 15px;
+	margin:0 auto;
+}
+
+@mixin nav-font{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: $h6;
+line-height: 15px;
+color: $white;
+}
+@mixin header-banner-h1{
+	text-align: center;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: $h1;
+line-height: 75px;
+color: $white;
+}
+@mixin header-banner-description{
+	text-align:center;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: $h4;
+line-height: 28px;
+color: $white;
+}
+@mixin header-button{
+	text-decoration: none;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: $h4;
+line-height: 28px;
+color: $white;
+text-align: center;
+transition: 0.3s;
+background: $main-color;
+
+}
+@mixin feautures-content_item{
+	width:32%;
+	text-align: center;
+}
+
+@mixin feautures-text{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: $h4;
+line-height: 28px;
+}
+
+@mixin feautures-text-description{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: $h5;
+line-height: 21px;
+color: #6C7279;
+}
+
+@mixin person-name_text{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: $h4;
+line-height: 28px;
+color: #2D3033;
+}
+@mixin person-profession_text{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: $main-color;
+}
+@mixin download-title_text{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+color: #000000;
+}
+
+@mixin download-subtitle_text{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+
+@mixin wrapper-tab{
+	max-width: 1200px;
+	padding:0 20px;
+	margin:0 auto;
+}
+@mixin nav-font-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+color: $white;
+}
+@mixin header-banner-h1-tab{
+	text-align: center;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 56px;
+color: $white;
+}
+@mixin header-banner-description-tab{
+	text-align:center;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: $white;
+}
+
+@mixin feautures-text-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+}
+
+@mixin feautures-text-description-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #6C7279;
+}
+
+@mixin person-name_text-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+color: #2D3033;
+}
+
+@mixin person-profession_text-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: $main-color;
+}
+
+@mixin download-title_text-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+@mixin download-subtitle_text-tab{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+}
+
+@mixin header-banner-h1-ph{
+	text-align: center;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+color: $white;
+}
+
+@mixin header-banner-description-ph{
+	text-align:center;
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: $white;
+}
+
+@mixin download-title_text-ph{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #000000;
+}
+
+@mixin download-subtitle_text-ph{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+text-align: center;
+}

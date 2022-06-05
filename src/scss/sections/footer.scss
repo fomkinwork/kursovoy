@@ -1,0 +1,184 @@
+	@import "../varebiles";
+@import "../mixin";
+
+.footer{
+	background: #353C65;
+	padding-top: 71px;
+	&-wrap{
+		@include wrapper;
+		&-container{
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 71px;
+			&_content{
+				width: 32%;
+				text-align: center; 
+				&_title{
+					@include download-subtitle_text;
+					color: #FFFFFF;
+			}
+			& p{
+				@include person-profession_text;
+				color: #FFFFFF;
+				padding-top: 29px;
+			}
+		}
+	}
+	}
+		&-contacts_list{
+			display: flex;
+			justify-content: center;
+			padding-top: 48px;
+			& li{
+				margin: 0 13.5px;
+				transition: 0.3s;
+				& a{
+					& svg{
+						& rect{
+							transition: 0.3s;
+						}
+						& path{
+							transition: 0.3s;
+					}
+					}
+				}
+			}
+		}
+}
+.footer-wrap-bottom{
+		background: #2C3154;
+		width:100%;
+		padding: 24px 0;
+		&_content{
+			@include wrapper;
+			padding: 0;
+			text-align: center;
+			@include person-profession_text;
+			color: #808080;
+			max-width: 370px;
+		}
+		&-text_color{
+			color: #FFFFFF;
+			transition: 0.3s;
+		}
+	}
+
+
+
+.footer-contact:hover svg{
+			& path{
+	fill: $main-color;
+	stroke: $main-color;
+	}
+			& rect{
+	stroke: $main-color;
+	}
+}
+.footer-wrap-bottom-text_color:hover{
+	color: $main-color;
+}
+
+
+
+@media (max-width: 1024px) {
+.footer{
+	padding-top: 46px;
+	&-wrap{
+		@include wrapper-tab;
+		&-container{
+			padding-bottom: 41px;
+			&_content{
+				&_title{
+					@include download-subtitle_text-tab;
+					color: #FFFFFF;
+			}
+			& p{
+				@include person-profession_text-tab;
+				padding-top: 16px;
+				color: #FFFFFF;
+			}
+		}
+	}
+	}
+		&-contacts_list{
+			padding-top: 32px;
+			& li{
+				margin: 0 11.5px;
+				& a{
+					& svg{
+						width: 33px;
+					}
+				}
+			}
+		}
+}
+
+.footer-wrap-bottom{
+		padding: 14px 0;
+		&_content{
+			@include wrapper-tab;
+			padding: 0;
+			@include person-profession_text-tab;
+			color: #808080;
+			max-width: 314px;
+		}
+		&-text_color{
+			color: #FFFFFF;
+			transition: 0.3s;
+		}
+	}
+}
+
+
+@media (max-width: 320px) {
+		.footer{
+	background: #353C65;
+	padding-top: 34px;
+	&-wrap{
+		@include wrapper-tab;
+		&-container{
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 33px;
+			&_content{
+				width: 100%;
+				text-align: center; 
+				&_title{
+					@include download-subtitle_text;
+					color: #FFFFFF;
+					font-size: 14px;
+					line-height: 16px;
+			}
+			& p{
+				@include person-profession_text;
+				color: #FFFFFF;
+				padding-top: 34px;
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+	}
+	}
+		&-contacts_list{
+			display: flex;
+			justify-content: center;
+			padding-top: 36px;
+			& li{
+				margin: 0 8.3px;
+				transition: 0.3s;
+			}
+		}
+}
+
+.footer-wrap-container_content:not(:first-child){
+		padding-top: 69px;
+}
+
+.footer-wrap-bottom{
+		padding: 29px 0;
+		&_content{
+			@include wrapper-tab;
+		}
+	}
+
+	}

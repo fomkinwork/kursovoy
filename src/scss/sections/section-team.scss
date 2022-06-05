@@ -1,0 +1,128 @@
+	@import "../varebiles";
+@import "../mixin";
+
+.team{
+	padding-bottom: 114px;
+}
+.team-content{
+	@include wrapper;
+	display:flex;
+	justify-content: space-between;
+
+}
+.person-card{
+	max-width: 23%;
+	&_img{
+		padding-bottom: 30px;
+		& img{
+			width: 100%;
+		}
+	}
+}
+.person-card_text{
+}
+.card-text_name{
+	@include person-name_text;
+	padding: 1px 0;
+}
+.card-text_profession{
+ @include person-profession_text;
+ padding-top: 5px;
+}
+.card-text_description{
+	@include feautures-text-description;
+	padding-top: 17.86px;
+}
+
+.person-card_contacts{
+	padding-top: 37px;
+		&_list{
+		display:flex;
+		flex-direction: row;
+			}
+				&_button{
+					margin-right: 5px;
+					& svg {
+						& rect{
+							transition: 0.3s;
+						}
+						& path{
+							transition: 0.3s;
+					}
+					}
+}
+}
+
+.person-card_contacts_button:hover svg{
+			& path{
+	fill: $main-color;
+	stroke: $main-color;
+	}
+			& rect{
+	stroke: $main-color;
+	}
+}
+
+@media (max-width: 1024px) {
+	.team-content{
+		padding: 0 20px;
+	}
+	.card-text_name{
+	@include person-name_text-tab;
+	padding: 2px 0;
+}
+	.card-text_profession{
+ @include person-profession_text-tab;
+ padding-top: 5px;
+}
+	.card-text_description{
+	@include feautures-text-description-tab;
+	padding-top: 22px;
+}
+	.person-card_img{
+	padding-bottom: 25px;
+	}
+	.person-card_contacts_button svg{
+		max-width: 32.8px;
+		max-height: 32.8px;
+	}
+	.person-card_contacts{
+		padding-top: 39px;
+	}
+}
+
+@media (max-width: 320px) {
+	.team{
+	padding-bottom: 34px;
+}
+	.team-content{
+	@include wrapper;
+	display:flex;
+flex-direction: column;
+padding: 0 20px;
+}
+	.person-card{
+	max-width: 100%;
+	&_img{
+		padding-bottom: 25px;
+		& img{
+			width: 100%;
+		}
+	}
+}
+	.card-text_description{
+	padding-top: 36px;
+}
+	.person-card_contacts{
+		padding-top: 55px;
+	}
+		.person-card_contacts_button svg{
+		max-width: 39.6px;
+		max-height: 39.6px;
+		width: 39.6px;
+		height: 39.6px;
+	}
+	.person-card:not(:first-child){
+		padding-top: 49px;
+	}
+	}

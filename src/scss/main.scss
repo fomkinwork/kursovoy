@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  	list-style-type: none;
+  	text-decoration: none;
+  	scroll-behavior: smooth;
+}
+
+@import "sections/header";
+@import "sections/section-banner.scss";
+@import "sections/section-feautures.scss";
+@import "sections/section-works.scss";
+@import "sections/section-team.scss";
+@import "sections/section-slider.scss";
+@import "sections/section-download.scss";
+@import "sections/footer.scss"

@@ -1,0 +1,67 @@
+	@import "../varebiles";
+@import "../mixin";
+
+.feautures{
+	padding: 116px 0 33px;
+}
+
+.feautures-content{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	&_item{
+		@include feautures-content_item;
+	}
+	.feautures-content_item_title{
+		@include feautures-text;
+		padding: 22px 0;
+		text-transform: uppercase;
+	}
+	.feautures-content_item_description{
+		@include feautures-text-description;
+		padding: 20px 0 100px;
+	}
+	.feautures-content_item_img{
+		display: block;
+	}
+
+}
+
+@media (max-width: 1024px) {
+	.feautures {
+		padding: 116px 0 30px;
+		}
+.feautures-content{
+	&_item{
+	}
+	.feautures-content_item_title{
+		@include feautures-text-tab;
+		padding: 20px 0;
+	}
+	.feautures-content_item_description{
+		@include feautures-text-description-tab;
+		padding: 20px 0 50px;
+	}
+	.feautures-content_item_img img{
+		width: 85px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.feautures{
+	padding: 40px 0 34px;
+}
+		.feautures-content{
+	&_item{
+		@include feautures-content_item;
+		width:100%;
+	}
+		.feautures-content_item_title{
+		padding: 20px 0 5px;
+	}
+		.feautures-content_item_description{
+		padding: 0 0 41px;
+	}
+}
+	}
