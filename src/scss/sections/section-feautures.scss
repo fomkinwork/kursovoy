@@ -48,7 +48,15 @@
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+			.feautures-content{
+	&_item{
+		width: 48%;
+	}
+}
+}
+
+@media (max-width: 420px) {
 	.feautures{
 	padding: 40px 0 34px;
 }

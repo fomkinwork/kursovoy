@@ -91,7 +91,24 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.team-content{
+		flex-direction: raw;
+		flex-wrap: wrap;
+	}
+	.person-card{
+		max-width: 48%;
+		width: 48%;
+	}
+	.profession-cutter{
+		display: none;
+	}
+}
+
 @media (max-width: 320px) {
+		.profession-cutter{
+		display: inline-block;
+	}
 	.team{
 	padding-bottom: 34px;
 }
@@ -103,6 +120,7 @@ padding: 0 20px;
 }
 	.person-card{
 	max-width: 100%;
+	width: 100%;
 	&_img{
 		padding-bottom: 25px;
 		& img{
