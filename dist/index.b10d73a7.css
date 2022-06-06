@@ -1416,7 +1416,7 @@
   }
 
   .footer-contacts_list li a svg {
-    width: 33px;
+    max-width: 33px;
   }
 
   .footer-wrap-bottom {
